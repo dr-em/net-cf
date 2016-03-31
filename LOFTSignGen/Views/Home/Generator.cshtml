@@ -1,0 +1,67 @@
+﻿@model LOFTSignGen.Models.InfoViewModel
+
+@{
+    ViewBag.Title = "Email Signature Generator";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2></h2>
+            </hgroup>
+            <p>
+            </p>
+        </div>
+    </section>
+}
+
+@using (Html.BeginForm("Generate", "Home", FormMethod.Post, null))
+{
+    @Html.ValidationSummary(true)
+   <table>
+       <tr>
+           <td>@Html.LabelFor(m => m.Name)</td>
+           <td>@Html.TextBoxFor(m => m.Name) @Html.ValidationMessageFor(m => m.Name)</td>
+       </tr>
+       <tr>
+           <td>@Html.LabelFor(m => m.BusinessTitle)</td>
+           <td>@Html.TextBoxFor(m => m.BusinessTitle) @Html.ValidationMessageFor(m => m.BusinessTitle)</td>
+       </tr>
+       <tr>
+           <td>@Html.LabelFor(m => m.Email)</td>
+           <td>@Html.TextBoxFor(m => m.Email) @Html.ValidationMessageFor(m => m.Email)</td>
+       </tr>
+       <tr>
+           <td>@Html.LabelFor(m => m.Address)</td>
+           <td>@Html.TextBoxFor(m => m.Address) @Html.ValidationMessageFor(m => m.Address)</td>
+       </tr>
+       <tr>
+           <td>@Html.LabelFor(m => m.Contact)</td>
+           <td>@Html.TextBoxFor(m => m.Contact) @Html.ValidationMessageFor(m => m.Contact)</td>
+       </tr>
+       <tr>
+           <td>@Html.LabelFor(m => m.LinkedInId)</td>
+           <td>@Html.TextBoxFor(m => m.LinkedInId)</td>
+       </tr>
+       <tr>
+           <td></td>
+           <td><button id="submitDocument" name="btnSave" type="submit">Generate</button></td>
+       </tr>
+   </table>    
+}
+
+@*<div>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#submitDocument').click(function () {
+            window.alert('Hi');
+            var test = ($("form").valid());
+            window.alert('bye');
+        })
+    });
+    </script>
+</div>*@
+

@@ -1,0 +1,37 @@
+﻿@model LOFTSignGen.Models.InfoViewModel
+
+<div style="font-size: 9pt; font-family: helvetica, arial; color: #000000;">
+    <div>
+        <span style="font-size: 9pt; font-family: helvetica, arial; color:#00693C">
+            <b>@Model.Name | @Model.BusinessTitle</b>
+            <br>Lab of Forward Thinking (LOFT)
+        </span>
+        <span style="font-size: 5pt; line-height: 5pt; font-family: helvetica, arial; color:#000000"><br>&nbsp;</span>
+    </div>
+    <div>
+        <span style="font-size: 9pt; font-family: helvetica, arial; color:#000000">
+            @Model.Address
+            <br>@Model.Contact
+            <br><a href='@(string.Format("mailto:{0}", Model.Email))' "style="color: #000000; text-decoration:none;">@Model.Email</a>
+            <span> | </span>
+            <a href="http://www.manulife.com" target="_blank" style="color: #000000; text-decoration:none;">manulife.com</a>
+        </span>
+        <span style="font-size: 5pt; line-height: 5pt; font-family: helvetica, arial; color:#000000"><br>&nbsp;</span>
+    </div>
+    <div>
+        <img nosend="1" width="120" height="48" src="https://manulifelookingforward.files.wordpress.com/2016/02/logo_loft.png" alt="LOFT">
+        <span style="font-size: 3pt; line-height: 3pt; font-family: helvetica, arial; color:#000000"><br>&nbsp;</span>
+    </div>
+    <div>
+        <img nosend="1" width="350" height=“23" src="https://manulifelookingforward.files.wordpress.com/2016/02/logo_manulifejohnhancock.png" alt="Manulife / John Hancock" />
+        <span style="font-size: 2pt; line-height: 2pt; font-family: helvetica, arial; color:#000000"><br>&nbsp;</span>
+    </div>
+    <div>
+        @if (!string.IsNullOrEmpty(Model.LinkedInId))
+        {
+            <a href='@(string.Format("https://linkedin.com/in/{0}", Model.LinkedInId))' target="_blank" style=" display inline-block; text-decoration none;"><img nosend="1" width="20" height="20" src="https://manulifelookingforward.files.wordpress.com/2016/02/logo_linkedin.png" alt="LinkedIn" style="border:none;"></a>
+        }        
+        <a href="https://twitter.com/innovateforward" target="_blank" style=" display inline-block; text-decoration none;"><img nosend="1" width="20" height="20" src="https://manulifelookingforward.files.wordpress.com/2016/02/logo_twitter.png" alt="Twitter" style="border:none;"></a>
+        <a href="https://instagram.com/innovateforward" target="_blank" style=" display inline-block; text-decoration none;"><img nosend="1" width="20" height="20" src="https://manulifelookingforward.files.wordpress.com/2016/02/logo_instagram.png" alt="Instagram" style="border:none;"></a>
+    </div>
+</div>

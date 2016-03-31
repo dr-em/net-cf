@@ -1,0 +1,37 @@
+﻿@{  
+    ViewBag.Title = "Email Signature Generator";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2></h2>
+            </hgroup>
+            <p>
+            </p>
+        </div>
+    </section>
+}
+
+<h3>Here's what you need to do to get started:</h3>
+
+<ol class="round">
+    <li class="one">
+        <h5>Fill Up The Necessary Info</h5>
+        Name, business title, email, address, and contact are mandatory. The rest are just optional.
+    </li>
+
+    <li class="two">
+        <h5>Click Generate</h5>
+        Wait for a moment to process your info.
+    </li>
+
+    <li class="three">
+        <h5>Download &amp; Save</h5>
+        Your html generated signature is ready to use. Make sure to save it into your local drive.
+    </li>
+</ol>
+<br />
+<a href="@Url.Action("Generator")"><img src="~/Content/Images/LETS-DO-THIS.png" /></a>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LOFTSignGen", "LOFTSignGen\LOFTSignGen.csproj", "{8598EDC1-0426-4B16-B4BE-FBF327C5865C}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "LOFTCloud", "LOFTCloud\LOFTCloud.ccproj", "{3BE540A7-A69A-4A17-BC67-1E599FEC2974}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8598EDC1-0426-4B16-B4BE-FBF327C5865C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8598EDC1-0426-4B16-B4BE-FBF327C5865C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8598EDC1-0426-4B16-B4BE-FBF327C5865C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8598EDC1-0426-4B16-B4BE-FBF327C5865C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE540A7-A69A-4A17-BC67-1E599FEC2974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE540A7-A69A-4A17-BC67-1E599FEC2974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE540A7-A69A-4A17-BC67-1E599FEC2974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE540A7-A69A-4A17-BC67-1E599FEC2974}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

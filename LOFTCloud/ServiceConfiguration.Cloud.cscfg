@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="LOFTCloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="LOFTSignGen">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=storageloft;AccountKey=Zj0v59IQZyioJieh7b4bCGyJZCBOTG8uOEKS4PkvQhi+krv9UwtHK+snYKghwGCUvbHQQzIR+8Iy2j95C/5i6Q==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="arifkhm" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECnFv/KM1v2KRziiXzLVxjgwDQYJKoZIhvcNAQEBBQAEggEAd0OBItA1IvRTBc6YxJWsChrEHkMNev3Bee9wGbSnBXGfj4JYl7GPXj0tKE+RjxfGnV5QlSTUnkUHiovNBMMMdBcpPOFkwnPjCRSYns74wym7nc+GmkvSRy/tpInPRahSPofwWD9EgvCLCf0ea+EewYnEpZEr4ALQq1l8NOeiBDQRsP/8o7kcm1jmsDSkaRQ4EAF2aTqgrKsH85CttpKP4VIAxzK/0YVFUX8JLujiXGTEkXZp7BcDP62Yp9tI5TBscO9eJobnD/N8okoQG9J7iWSbib4iSmk+KcNiz2LCGqZOAvJcWEUQaushODu6aaZ2/XPbrgYKOEWaDjv9ODjZnzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECFs9rEvldRIsgBA16ovESb87u5g7B341EfQb" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2017-03-18T23:59:59.0000000-04:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="3D0FDF8D293BA66E4531F69408E97370FE9190D3" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
