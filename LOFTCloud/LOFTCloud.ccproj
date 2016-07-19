@@ -55,7 +55,7 @@
     <DiagnosticsConfiguration Include="LOFTSignGenContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <ItemGroup>
-    <PublishProfile Include="Profiles\LOFTSignatureGeneratorProduction1.azurePubxml" />
+    <PublishProfile Include="Profiles\LOFTSignatureGeneratorProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
