@@ -11,7 +11,7 @@
     <div>
         <span style="font-size: 9pt; font-family: helvetica, arial; color:#000000">
             @Model.Address
-            <br>@Model.Contact
+            <br>Office: @Model.Office ext. @Model.OfficeExtension @if (!string.IsNullOrEmpty(Model.Mobile)) { <text>@string.Format(" | Mobile: {0}", Model.Mobile)</text>}
             <br><a href='@(string.Format("mailto:{0}", Model.Email))' "style="color: #000000; text-decoration:none;">@Model.Email</a>
             <span> | </span>
             <a href="http://www.manulife.com" target="_blank" style="color: #000000; text-decoration:none;">manulife.com</a>
